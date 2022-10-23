@@ -1,0 +1,32 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsIm5hbWUiOiJBbmRyZSBNYXVsYW5hIiwiZW1haWwiOiJhbmRyZUBnbWFpbC5jb20iLCJpYXQiOjE2NjY1MDc2MTAsImV4cCI6MTY2NjUwNzY0MH0.dQCqhvgQ8Dq1y9IDdYSHF6PRINKbInFjeTB7uzCP--Y
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name":"Andre Maulana",
+    "email":"andre@gmail.com",
+    "password":"123456",
+    "confPassword":"123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"andre@gmail.com",
+    "password":"123456"
+}
+
+
+###
+GET http://localhost:5000/token 
+
+
+###
+DELETE http://localhost:5000/logout 
+
